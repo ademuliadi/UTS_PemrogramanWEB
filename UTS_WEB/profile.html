@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biodata Pribadi - Profil</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #282836c2;
+  color: #141414;
+  padding: 10px 20px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+  text-decoration: underline;
+  color: #161e66;
+}
+
+nav ul li a {
+  color: #161e66;
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
+}
+
+footer {
+  background-color: #1d3df5;
+  color: #474444;
+  text-align: center;
+  padding: 10px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #0c0c0c;
+  border: 1px solid #9b9797;
+}
+
+th {
+  background-color: #333;
+  color: #a8a4a4;
+  border: 1px solid #9b9797;
+}
+section table {
+  border: 2px solid #000;
+}
+.center {
+  text-align: center;
+}
+
+img.profile-pic {
+  height: 200px;
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Profil - Biodata Pribadi</h1>
+  <nav>
+    <ul>
+      <li><a href="halamanutama.html">Home</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section>
+  <h2 class="center">Profil Saya</h2>
+  <img src="FALE.jpg.jpeg" alt="Foto Profil" class="profile-pic">
+  <p>NAMA: ADE MULIADI</p>
+  <p>TANGGAL LAHIR: 11 Oktober 2001</p>
+  <p>ALAMAT: Palasari, Ekasari, Jembrana, Bali</p>
+  <p>EMAIL: ade.muliadi1@gmail.com</p>
+
+  <h2>RIWAYAT PENDIDIKAN</h2>
+  <table>
+    <tr>
+      <th>NO</th>
+      <th>PENDIDIKAN</th>
+      <th>NAMA SEKOLAH</th>
+      <th>TAHUN LULUS</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>SD</td>
+      <td>SDK.Budi Rahayu</td>
+      <td>2014</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>SMP</td>
+      <td>SMP.Wana Murni</td>
+      <td>2017</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>SMA</td>
+      <td>SMA Negeri 1 Negara</td>
+      <td>2020</td>
+    </tr>
+  </table>
+</section>
+<title>Kotak Saran</title>
+<style>
+.container {
+  max-width: 400px;
+  margin: auto;
+}
+
+input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+}
+
+input[type=email]:focus {
+  border: 3px solid #555;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+textarea:focus {
+  border: 3px solid #555;
+}
+
+input[type=submit] {
+  background-color: #202020;
+  color: white;
+  padding: 12px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+input[type=submit]:hover {
+  background-color: #202020;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Kotak Saran</h2>
+  
+  <form action="/submit-suggestion" method="post">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Masukkan email Anda..">
+
+    <label for="suggestion">Saran:</label>
+    <textarea id="suggestion" name="suggestion" placeholder="Masukkan saran Anda.."></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
